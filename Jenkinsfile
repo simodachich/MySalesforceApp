@@ -54,6 +54,7 @@ node {
             if (isUnix()) {
                 rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
             } else {
+                def sfdxPath = "${toolbelt}\\bin\\sfdx"
                 rmsg = bat returnStdout: true, script: "\"${sfdxPath}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
             }
 
