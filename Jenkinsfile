@@ -14,6 +14,7 @@ node {
     println "HUB_ORG: ${HUB_ORG}"
     println "SFDC_HOST: ${SFDC_HOST}"
     println "CONNECTED_APP_CONSUMER_KEY: ${CONNECTED_APP_CONSUMER_KEY}"
+    println "jwt_key_file: ${jwt_key_file}"
 
     if (!JWT_KEY_CRED_ID) {
         error "JWT_KEY_CRED_ID is not set!"
